@@ -6,8 +6,6 @@ describe("App", () => {
   it("finds rendered text", () => {
     render(<App />);
 
-    expect(
-      screen.getByText("Open up App.js to start working on your app!")
-    ).toBeTruthy();
+    expect(screen.getByText("Count: 0")).toBeTruthy();
   });
 });
