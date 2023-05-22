@@ -1,13 +1,13 @@
 import React from "react";
-import { View, Text } from "react-native";
 import { render, screen } from "@testing-library/react-native";
+import App from "./App";
 
-it("finds rendered text", () => {
-  render(
-    <View>
-      <Text>hello</Text>
-    </View>
-  );
+describe("App", () => {
+  it("finds rendered text", () => {
+    render(<App />);
 
-  expect(screen.getByText("hello")).toBeTruthy();
+    expect(
+      screen.getByText("Open up App.js to start working on your app!")
+    ).toBeTruthy();
+  });
 });
