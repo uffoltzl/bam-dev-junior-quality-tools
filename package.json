@@ -9,7 +9,8 @@
     "web": "expo start --web",
     "test:types": "tsc",
     "test:lint": "eslint . --ext .js,.jsx,.ts,.tsx --report-unused-disable-directives --max-warnings 0 --cache --cache-strategy content --cache-location .cache/eslint.json",
-    "test:jest": "jest"
+    "test:jest": "jest",
+    "test": "yarn test:types && yarn test:lint && yarn test:jest"
   },
   "dependencies": {
     "expo": "~48.0.15",
